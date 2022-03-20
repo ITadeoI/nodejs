@@ -21,6 +21,9 @@ app.use((req, res, next) => {
 app.post('/post', (req, res) => {
   
   console.log(req.body);
+  console.log(req.body.email);
+  console.log(req.body.password);
+  console.log(req.body.name);
   res.send(req.body);
   
 });
