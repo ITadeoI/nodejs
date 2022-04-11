@@ -1,5 +1,5 @@
 const WebSocketServer = require('ws').Server;
-const WSS = new WebSocketServer({port: 3232});
+const WSS = new WebSocketServer({port: 3434});
 
 WSS.on('connection', (ws) => {
   
@@ -13,7 +13,7 @@ WSS.on('connection', (ws) => {
       
       WSS.clients.forEach((client) => {
         
-        client.send(message);
+        client.send(message.toString());
         
       });
       

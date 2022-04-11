@@ -1,9 +1,7 @@
-const WS = new WebSocket('ws://localhost:3232');
+const WS = new WebSocket('ws://localhost:3434');
 
 WS.onmessage = (payload) => {
-  
   displayMessages(payload.data);
-  
 };
 
 WS.onopen = () => {
@@ -25,7 +23,7 @@ function displayTitle(title) {
 }
 
 function displayMessages(message) {
-  
+
   let h1 = document.createElement('h1');
   
   h1.innerText = message;
