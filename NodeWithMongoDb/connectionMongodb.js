@@ -66,7 +66,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client) {
 
 db.collection('mammals').findOneAndDelete({
 
-  _id: new ObjectId('6261615bb2b21064fa2c2a49'),
+  _id: new ObjectId('6261615bb2b21064fa2c2a49git '),
 
 }).then(result => {
 
